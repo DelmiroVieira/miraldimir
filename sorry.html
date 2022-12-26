@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <audio autoplay>
+      <source
+        src="audio/Chris_Medina_-_What_Are_Words_(Official_Video)(128k).mp3"
+      />
+    </audio>
+    <div>
+      <p id="text" class="container">
+        Muitas vezes, dizemos e fazemos coisas sem pensar, que doem nas pessoas.
+        Mas quero que entenda que errei, afinal, somos humanos. Infelizmente, às
+        vezes tentamos fazer a escolha certa e tomar a melhor atitude, no
+        entanto erramos, porque somos falhos. É claro que isso não diminui a
+        minha culpa nem a minha responsabilidade por ter agido de maneira errada
+        e é por essa razão que quero pedir desculpas. Queria poder voltar no
+        tempo com a sabedoria que tenho agora, pois isso impediria que eu
+        fizesse algo que te deixaria triste. Me desculpa?
+      </p>
+      <div class="img">
+        <img src="img/OIP-removebg-preview.png" alt="" />
+      </div>
+    </div>
+    <script>
+      const titulo = document.querySelector("#text");
+
+      function escrever(title) {
+        const text = title.innerHTML.split("");
+        title.innerHTML = "";
+        text.forEach((letra, index) => {
+          setTimeout(() => {
+            title.innerHTML += letra;
+          }, 75 * index);
+        });
+      }
+      escrever(titulo);
+    </script>
+  </body>
+</html>

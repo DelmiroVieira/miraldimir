@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: love;
+  src: url(../font/HussarBoldWeb-bf92.woff);
+}
+.topo {
+  width: 100%;
+  height: 20px;
+  background-color: #f1f1f1;
+  margin-top: 120px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/azul.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.space {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50%;
+  height: 50%;
+}
+
+button {
+  width: 150px;
+  padding: 10px;
+  background-color: #0381f7;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+}
+button:hover {
+  border: 1px solid #0381f7;
+  transition: 0.5s;
+  background-color: #f1f1f1;
+  color: #0381f7;
+}
+#text {
+  padding: 5px;
+  color: rgb(5, 25, 51);
+  font-family: love;
+}
+.img {
+  text-align: right;
+
+  margin-bottom: 50px;
+}
+@keyframes pulsar {
+  from {
+    width: 60px;
+  }
+  to {
+    width: 90px;
+  }
+}
+img {
+  width: 60px;
+  rotate: 30deg;
+  padding: 10px;
+
+  margin-right: 40px;
+  animation-duration: 0.5s;
+  animation-name: pulsar;
+  animation-iteration-count: infinite;
+}
